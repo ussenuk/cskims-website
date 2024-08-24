@@ -9,13 +9,13 @@ function DonationPage() {
     const handleLoad = () => setLoading(false);
 
     if (iframe) {
-      iframe.addEventListener('load', handleLoad);
+      // Use 'onload' instead of addEventListener
+      iframe.onload = handleLoad;
     }
 
-    // Clean up event listener
     return () => {
       if (iframe) {
-        iframe.removeEventListener('load', handleLoad);
+        iframe.onload = null; // Clean up the event handler
       }
     };
   }, []);
@@ -26,7 +26,7 @@ function DonationPage() {
         <h1>Support Complexe Scolaire Kims</h1>
         <h1>Soutien à Complexe Scolaire Kims</h1>
       </div>
-      
+
       <div className="iframe-container">
         {loading && (
           <div className="loading-spinner">
@@ -35,8 +35,7 @@ function DonationPage() {
           </div>
         )}
         <iframe
-          width="1200"
-          height="1200"
+          className="donation-iframe"
           src="https://donorbox.org/send-a-child-to-school-for-just-8-complexe-scolaire-kims"
           style={{ display: loading ? 'none' : 'block' }}
         ></iframe>

@@ -35,7 +35,7 @@ export default function Grid() {
 
     return (
         <div>
-            <div className="grid grid-cols-3 grid-rows-2 gap-2">
+            <div className="grid grid-cols-3 grid-rows-2  gap-2">
                 <div className="bg-gray-200 p-4" onClick={() => handleImageClick(0)}>
                     <img src={Image5} alt="" className="w-full h-full object-cover cursor-pointer" />
                 </div>

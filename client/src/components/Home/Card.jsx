@@ -7,12 +7,12 @@ import Image5 from '../Images/a5.png'
 
 function Card() {
   return (
-    <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5">
     
         <div className="rounded overflow-hidden shadow-lg">
-            <img className="w-full" src={Image4} alt="Educational excursion"/>
+            <img className="w-full h-48 object-cover sm:h-auto" src={Image4} alt="Educational excursion"/>
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Aider l'enfant à avoir confiance en soi</div>
+                <div className="font-bold text-x sm:text-xl mb-2">Aider l'enfant à avoir confiance en soi</div>
                 <p className="text-gray-700 text-base">
                 Comme la confiance en soi, l’estime de soi se développe dès l’enfance. Elle repose sur la conscience de sa valeur personnelle. Une bonne estime de soi permet donc de reconnaître ses forces et ses limites et d’avoir une image positive de soi. Le sentiment de confiance permet de croire en ses capacités de réussir; il donne la force d’affronter différentes situations et de prendre des risques.
                 </p>
@@ -25,7 +25,7 @@ function Card() {
         </div>
         
         <div className="rounded overflow-hidden shadow-lg">
-        <img className="w-full" src={Image3} alt="River"/>
+        <img className="w-full h-48 object-cover sm:h-auto" src={Image3} alt="River"/>
         <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Éducation moderne pour tous</div>
             <p className="text-gray-700 text-base">
@@ -43,7 +43,7 @@ donner une formation scolaire de bonne qualité
 
     
     <div className="rounded overflow-hidden shadow-lg">
-      <img className="w-full" src={Image1} alt="Forest"/>
+      <img className="w-full h-48 object-cover sm:h-auto" src={Image1} alt="Forest"/>
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">Balade en pleine nature</div>
         <p className="text-gray-700 text-base">
