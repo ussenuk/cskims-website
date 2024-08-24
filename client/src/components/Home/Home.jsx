@@ -19,7 +19,7 @@ export default function Home() {
       ];
     
       return (
-        <div className="w-[60%] m-auto pt-2">
+        <div className="max-w-6xl mx-auto p-4">
           <Carousel slides={slides} />
           <ServiceCard />
           <Grid />
