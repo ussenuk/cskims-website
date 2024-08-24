@@ -22,10 +22,39 @@ function Jobs() {
   return (
     <section style={{ display: "flex", justifyContent: "center" }}>
       <div>
+      {/* Volunteering Section */}
+      <div style={{ textAlign: "center" }}>
+      <Typography variant="h5">
+        <strong>
+          <u>TRAVAILLER AU C.S KIM'S</u>
+        </strong>
+      </Typography>
+      <Typography variant="body1" style={{ marginTop: "16px" }}>
+        Vous êtes enseignant et intéressé par du volontariat au sein de C.S KIM'S ?
+      </Typography>
+      <Typography variant="body1" style={{ marginTop: "8px" }}>
+        Envoyez votre candidature
+      </Typography>
+      <Typography variant="body1" style={{ marginTop: "8px" }}>
+        <strong>Condition d’éligibilité:</strong>
+      </Typography>
+      <ul style={{ textAlign: "left", marginLeft: "20%", marginTop: "8px" }}>
+        <li>Etre titulaire d’un diplôme dans l’enseignement</li>
+        <li>Fournir une lettre de recommandation d’une institution scolaire</li>
+        <li>Fournir un certificat de bonne vie et mœurs</li>
+        <li>Envoyer votre lettre de motivation et votre CV</li>
+      </ul>
+      <Typography variant="body1" style={{ marginTop: "16px" }}>
+        Pour soumettre votre candidature, envoyez votre lettre de motivation et votre CV à{" "}
+        <a href="mailto:ukimanuka@gmail.com" style={{ color: "blue" }}>
+          <u>ukimanuka@gmail.com</u>
+        </a>
+      </Typography>
+    </div>
         <div style={{ textAlign: "center" }}>
           <Typography variant="h5">
             <strong>
-              <u>LIST OF ALL JOBS</u>
+              <u>Liste de tous les emplois disponibles</u>
             </strong>
           </Typography>
         </div>
@@ -56,14 +85,7 @@ function Jobs() {
         </TableContainer>
 
         <br />
-        <Typography variant="h6">
-          To apply for any of the above jobs, please send your current CV and
-          application letter to{" "}
-          <a href="mailto:hr@csk.edu" style={{ color: "blue" }}>
-            <u>hr@csk.edu</u>
-          </a>
-        </Typography>
-        <br />
+        
       </div>
     </section>
   );

@@ -55,7 +55,7 @@ export default function Header() {
                                         } lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  HOME
+                  ACCUEIL
                 </NavLink>
               </li>
               <li>
@@ -72,7 +72,7 @@ export default function Header() {
                                         lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  ABOUT
+                À PROPOS
                 </NavLink>
               </li>
               <li className="relative group">
@@ -89,20 +89,20 @@ export default function Header() {
                                         lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  REGISTRATION
+                INSCRIPTION
                 </NavLink>
                 <div className="opacity-0 group-hover:opacity-100 absolute left-0 top-full bg-white pt-2 mt-2 w-48 rounded-lg shadow-lg">
                   <NavLink
                     to="/StudentRegistration"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Online Student Registration
+                  S'inscrire
                   </NavLink>
                   <NavLink
                     to="/news"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    News Related to Our School
+                  Information relative à l'école
                   </NavLink>
                 </div>
               </li>
@@ -113,7 +113,7 @@ export default function Header() {
                   onMouseLeave={() => toggleSchoolDropdown()}
                 >
                   <span className="block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 cursor-pointer">
-                    SCHOOL
+                    ECOLE
                   </span>
                   {isSchoolDropdownOpen && (
                     <ul className="absolute bg-white pt-2 border border-gray-200 dropdown">
@@ -122,19 +122,19 @@ export default function Header() {
                           to="/school"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          Kindergarten & Primary
+                          Maternel & Primaire
                         </NavLink>
                         <NavLink
                           to="/secondary"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          High School
+                          Secondaire
                         </NavLink>
                         <NavLink
                           to="/admissions"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          Admissions
+                        Infrastructure et Plan
                         </NavLink>
                       </li>
                     </ul>
@@ -153,18 +153,19 @@ export default function Header() {
                   {isSupportDropdownOpen && (
                     <ul className="absolute bg-white pt-2 border border-gray-200 dropdown">
                       <li>
+                      <NavLink
+                          to="/donate"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Faire un don
+                        </NavLink>
                         <NavLink
                           to="/scholarship"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          Scholarship
+                          Bourse Scolaire
                         </NavLink>
-                        <NavLink
-                          to="/donate"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Donate
-                        </NavLink>
+                        
                       </li>
                     </ul>
                   )}
@@ -185,7 +186,7 @@ export default function Header() {
                                         lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  JOBS
+                  JOB
                 </NavLink>
               </li>
               <li>
@@ -203,7 +204,7 @@ export default function Header() {
                                         hover:text-orange-700 lg:p-0`
                   }
                 >
-                  CONTACT US
+                  CONTACT
                 </NavLink>
               </li>
 
@@ -222,7 +223,7 @@ export default function Header() {
                                         hover:text-orange-700 lg:p-0`
                   }
                 >
-                  LOG IN
+                  SE CONNECTER
                 </NavLink>
               </li>
 

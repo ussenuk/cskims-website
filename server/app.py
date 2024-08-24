@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 import os
-from flask import request, session, jsonify, make_response
+from flask import request, session, jsonify, make_response, send_file, send_from_directory
 from flask_restful import Resource, reqparse
 from sqlalchemy.exc import IntegrityError
 from flask_cors import CORS
+import os
+
+BASEPATH = os.path.abspath(os.path.dirname(__file__))
+print(BASEPATH)
 
 from config import app, db, api, cors
 from models import User, Department, Accounting, UserDepartment, Salary, Job, Registration
@@ -12,9 +16,15 @@ load_dotenv()
 
 
 @app.route("/")
-def home():
-    return "Welcome to my API."
+def root():
+    return send_file(os.path.join(BASEPATH, 'static/index.html'))
 
+@app.route('/<path:path>')
+def staticfiles(path):
+    if os.path.exists(os.path.join(BASEPATH, "static", path)):
+        return send_from_directory(os.path.join(BASEPATH, "static"), path)
+    else:
+        return send_file(os.path.join(BASEPATH, 'static/index.html'))
 
 # Frank
 class Signup(Resource):

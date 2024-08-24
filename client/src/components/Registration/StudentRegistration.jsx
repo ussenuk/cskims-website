@@ -62,11 +62,11 @@ const StudentRegistration = () => {
 
   return (
     <div className="max-w-lg mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Online Student Registration</h2>
+      <h2 className="text-2xl font-bold mb-4">Enregistrement d'élève en ligne</h2>
       <form onSubmit={formik.handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
-            First Name
+            Nom
           </label>
           <input
             type="text"
@@ -84,7 +84,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
-            Last Name
+            Post-nom
           </label>
           <input
             type="text"
@@ -102,7 +102,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="father_fname" className="block text-sm font-medium text-gray-700">
-            Father's First Name
+          Nom du père
           </label>
           <input
             type="text"
@@ -120,7 +120,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="father_lname" className="block text-sm font-medium text-gray-700">
-            Father's Last Name
+          Post-nom du père
           </label>
           <input
             type="text"
@@ -138,7 +138,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="mother_fname" className="block text-sm font-medium text-gray-700">
-            Mother's First Name
+          Nom de la mère
           </label>
           <input
             type="text"
@@ -156,7 +156,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="mother_lname" className="block text-sm font-medium text-gray-700">
-            Mother's Last Name
+          Post-nom de la mère
           </label>
           <input
             type="text"
@@ -174,7 +174,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="adress" className="block text-sm font-medium text-gray-700">
-            Adress
+          Adresse
           </label>
           <input
             type="text"
@@ -192,7 +192,7 @@ const StudentRegistration = () => {
 
         <div>
           <label htmlFor="grade" className="block text-sm font-medium text-gray-700">
-            Grade
+            Niveau
           </label>
           <select
             id="grade"
@@ -202,12 +202,12 @@ const StudentRegistration = () => {
             onBlur={formik.handleBlur}
             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-black focus:ring focus:ring-black focus:ring-opacity-50"
           >
-            <option value="grade1">Grade 1</option>
-            <option value="grade2">Grade 2</option>
-            <option value="grade3">Grade 3</option>
-            <option value="grade4">Grade 4</option>
-            <option value="grade5">Grade 5</option>
-            <option value="grade6">Grade 6</option>
+            <option value="grade1">Niveau 1</option>
+            <option value="grade2">Niveau 2</option>
+            <option value="grade3">Niveau 3</option>
+            <option value="grade4">Niveau 4</option>
+            <option value="grade5">Niveau 5</option>
+            <option value="grade6">Niveau 6</option>
           </select>
           {formik.touched.grade && formik.errors.grade ? (
             <p className="error-message">{formik.errors.grade}</p>
@@ -218,7 +218,7 @@ const StudentRegistration = () => {
           type="submit"
           className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
         >
-          Register
+          Enregistrer
         </button>
       </form>
     </div>

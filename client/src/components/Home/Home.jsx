@@ -7,25 +7,25 @@ import Image1 from '../Images/1.jpg'
 import Image2 from '../Images/4.jpeg'
 import Image3 from '../Images/3.jpg'
 import Image4 from '../Images/Kims.png'
+import ServiceCard from './ServiceCard';
 
 export default function Home() {
     let slides = [
-        {image: Image1, content:"KIM'S School Complex, created in 2018, is a school approved by the Ministry of Primary, Secondary and Vocational Education in the Democratic Republic of the Congo and currently comprises two sections, namely nursery and primary. The school is located in the town of Sake, a few kilometers from the city of Goma."},
-        {image: Image4, content:"Building the sanctuary, in which all the magic happens. We are on the verge of making the seemingly impossible, a possible reality."},
-        {image: Image2, content:"One child, one teacher, one book, one pen, can change the world"},
-        {image:Image3, content:"What started off as an idea, dream, only 3 years ago, has translated into a school premise filled with over 300 children."},
+        {image: Image1, content:"Le complexe scolaire KIM’S créé en 2018 est une école agréée par le ministère de l’éducation primaire, secondaire et Professionnel en République démocratique du Congo par l’arrêté ministériel N°MINEPSP/CABMIN/2900/2018 DU 08/09/2018 portant agrément et autorisation de fonctionnement des établissements privés d’enseignement maternel, primaire, secondaire et professionnel dans la province du Nord-Kivu. Cette école compte deux branches, il s’agit du Complexe scolaire KIM’S à Sake et du complexe scolaire KIM’S II à Goma."},
+        {image: Image4, content:"Nous sommes sur le point de faire de l'impossible une réalité possible."},
+        {image: Image2, content:"Un enfant, un professeur, un livre, un stylo, peuvent changer le monde."},
+        {image:Image3, content:"Ce qui a commencé comme une idée, un rêve, il y a seulement 5 ans, s’est traduit en une chaine d’écoles remplie de plus de 600 enfants."},
         
       ];
     
       return (
         <div className="w-[60%] m-auto pt-2">
           <Carousel slides={slides} />
-          <Card/>
-          <div className="w-[100%] m-auto pt-0 py-0">
+          <ServiceCard />
           <Grid />
+          <Card/>
           <Testimonials/>
-          </div>
-          
+
         </div>
       );
 }

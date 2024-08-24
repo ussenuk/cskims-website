@@ -95,7 +95,7 @@ export default function LoginForm({ onLogin, user }) {
       <form onSubmit={handleSubmit} style={{ margin: "30px" }}>
         <div className="form-group">
           <label htmlFor="username" className="form-label">
-            Username:
+            Nom d'utilisateur / Username:
           </label>
 
           <input
@@ -110,7 +110,7 @@ export default function LoginForm({ onLogin, user }) {
         <p className="error-message">{formik.errors.username}</p>
         <div className="form-group">
           <label htmlFor="password" className="form-label">
-            Password:
+            Mot de passe / Password:
           </label>
           <input
             id="password"

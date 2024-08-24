@@ -6,41 +6,39 @@ function ScholarshipPage() {
     <div className="container">
       <header className="header">
         <img className='scholarship-img' src="https://www.filepicker.io/api/file/cyS02sRrmQxhuWn5PyMg" alt="Complexe Scolaire Kims" />
-        <h1>Scholarships at Complexe Scolaire Kims</h1>
-        <h2>Investing in Education, Empowering Futures</h2>
+        <h1>Bourses d'études au Complexe Scolaire Kims</h1>
+        <h2>Investir dans l'éducation, donner des pouvoirs à l'avenir</h2>
       </header>
       <div className="content">
         <section className="intro">
-          <h2>Welcome to Our Scholarship Program</h2>
-          <p>At Complexe Scolaire Kims, we believe in providing opportunities for talented and motivated students to pursue their education without financial barriers. Our scholarship program aims to support outstanding students who demonstrate academic excellence, leadership potential, and a commitment to making a positive impact in their community.</p>
+          <h2>Bienvenue à notre programme de bourses d'études</h2>
+          <p>Chez Complexe Scolaire Kims, nous croyons à offrir des possibilités aux étudiants talentueux et motivés de poursuivre leur éducation sans obstacles financiers. Notre programme de bourses d'études vise à soutenir des étudiants exceptionnels qui démontrent l'excellence académique, le potentiel de leadership et l'engagement à avoir un impact positif dans leur communauté.</p>
         </section>
         <section className="eligibility">
-          <h2>Scholarship Eligibility Criteria</h2>
+          <h2>Critères d'éligibilité de la bourse</h2>
           <ul>
-            <li>Must be a current student of Complexe Scolaire Kims</li>
-            <li>Must demonstrate academic excellence</li>
-            <li>Must exhibit leadership qualities</li>
-            <li>Must actively participate in extracurricular activities</li>
-            <li>Financial need may be considered</li>
+            <li>Vous devez être un étudiant actuel du Complexe Scolaire Kims</li>
+            <li>Démontrer l'excellence académique</li>
+            <li>Il doit montrer des qualités de leadership</li>
+            <li>Il doit participer activement aux activités extracurriculaires</li>
+            <li>Les besoins financiers peuvent être pris en considération</li>
           </ul>
         </section>
         <section className="application">
-          <h2>How to Apply</h2>
-          <p>Interested students should submit a scholarship application form along with the following documents:</p>
+          <h2>Comment appliquer</h2>
+          <p>Les étudiants intéressés doivent soumettre un formulaire de demande de bourse accompagné des documents suivants :</p>
           <ul>
-            <li>Completed application form</li>
-            <li>Transcripts of academic records</li>
-            <li>Letter(s) of recommendation</li>
-            <li>Personal statement outlining academic and career goals</li>
-            <li>Proof of financial need (if applicable)</li>
+            <li>Formulaire de demande complété</li>
+            <li>Lettres de recommandation</li>
+            <li>Prouve du besoin financier (le cas échéant)</li>
           </ul>
-          <p>The scholarship application deadline is [Insert Deadline Date]. Late applications will not be considered.</p>
+          <p>La date limite de dépôt des demandes de bourses est [Premiere semaine de l'annee scolaire]. Les demandes tardives ne seront pas prises en considération.</p>
         </section>
         <section className="contact">
-          <h2>Contact Us</h2>
-          <p>If you have any questions regarding the scholarship program or the application process, please feel free to contact us:</p>
-          <p>Email: scholarships@complexescolairekims.com</p>
-          <p>Phone: +1234567890</p>
+          <h2>Contactez-nous</h2>
+          <p>Si vous avez des questions concernant le programme de bourses d'études ou le processus de candidature, n'hésitez pas à nous contacter :</p>
+          <p>Email: complexescolairekims@gmail.com</p>
+          <p>Phone: +243 995840830</p>
         </section>
       </div>
      

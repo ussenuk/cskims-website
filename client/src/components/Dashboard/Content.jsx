@@ -9,7 +9,7 @@ const Content = () => {
     <div className='content'>
       <ContentHeader/>
       <Card />
-      <TeacherList/>
+      <p> WELCOME TO OUR SCHOOL MANAGEMENT DASHBOARD</p>
     </div>
   )
 }
