@@ -20,7 +20,7 @@ export default function Carousel({ slides }) {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); // Shift every 2 seconds
+    }, 7000); // Shift every 2 seconds
 
     return () => {
       clearInterval(interval); // Clear interval on component unmount
