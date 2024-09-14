@@ -21,7 +21,7 @@ function DonationPage() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className="max-w-8xl mx-auto p-4">
       <div className="title">
         <h1>Support Complexe Scolaire Kims</h1>
         <h1>Soutien à Complexe Scolaire Kims</h1>
