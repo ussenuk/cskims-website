@@ -5,17 +5,35 @@ function DonationPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        // Redirect to the Donorbox page if screen width is mobile-sized
+        window.location.href = "https://donorbox.org/send-a-child-to-school-for-just-8-complexe-scolaire-kims";
+      }
+    };
+
+    // Call the handleResize function once on mount
+    handleResize();
+
+    // Add an event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     const iframe = document.querySelector('iframe');
     const handleLoad = () => setLoading(false);
 
     if (iframe) {
-      // Use 'onload' instead of addEventListener
       iframe.onload = handleLoad;
     }
 
     return () => {
       if (iframe) {
-        iframe.onload = null; // Clean up the event handler
+        iframe.onload = null;
       }
     };
   }, []);
